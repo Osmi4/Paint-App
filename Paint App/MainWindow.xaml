@@ -11,6 +11,7 @@
                 <ComboBoxItem Content="Draw Circle" Tag="DrawCircle_Click"/>
                 <ComboBoxItem Content="Draw Polygon" Tag="DrawPolygon_Click"/>
                 <ComboBoxItem Content="Draw Curve" Tag="DrawCurve_Click"/>
+                <ComboBoxItem Content="Draw Rectangle" Tag="DrawRectangle_Click"/>
                 <ComboBoxItem Content="Save Shapes" Tag="SaveShapesButton_Click"/>
                 <ComboBoxItem Content="Load Shapes" Tag="LoadShapesButton_Click"/>
                 <ComboBoxItem Content="Antialias" Tag="TurnAntialiased_Click"/>
@@ -26,9 +27,10 @@
                 <ComboBoxItem Content="Select Line" Tag="SelectLine_Click"/>
                 <ComboBoxItem Content="Select Circle" Tag="SelectCircle_Click"/>
                 <ComboBoxItem Content="Select Polygon" Tag="SelectPolygon_Click"/>
+                <ComboBoxItem Content="Select Rectangle" Tag="SelectRectangle_Click"/>
                 <ComboBoxItem Content="Move Circle" Tag="MoveCircle_Click"/>
+                <ComboBoxItem Content="Move Rectangle" Tag="MoveRectangle_Click"/>
                 <ComboBoxItem Content="Change Vertex" Tag="ChangeVertex_Click"/>
-                <ComboBoxItem Content="Move Curve" Tag="MoveCurve_Click"/>
             </ComboBox>
             <Button Content="Apply Action" Click="ApplyAction_Click"/>
         </StackPanel>
@@ -39,6 +41,10 @@
                 <ComboBoxItem Content="Change Radius" Tag="ChangeRadius_Click"/>
                 <ComboBoxItem Content="Change Thickness" Tag="ChangeThickness_Click"/>
                 <ComboBoxItem Content="Change Color" Tag="ChangeColor_Click"/>
+                <ComboBoxItem Content="Fill Polygon" Tag="FillPolygon_Click"/>
+                <ComboBoxItem Content="Fill Image" Tag="FillImage_Click"/>
+                <ComboBoxItem Content="Flood Fill" Tag="FloodFill_Click"/>
+                <ComboBoxItem Content="Clip Polygon" Tag="ClipPolygon_Click"/>
             </ComboBox>
             <Button Content="Apply Change" Click="ApplyChange_Click"/>
         </StackPanel>
@@ -48,6 +54,7 @@
             <TextBlock x:Name="selectedLineText" Text="Selected Line: None"/>
             <TextBlock x:Name="selectedCircleText" Text="Selected Circle: None"/>
             <TextBlock x:Name="selectedPolygonText" Text="Selected Polygon: None"/>
+            <TextBlock x:Name="selectedRectangleText" Text="Selected Rectangle: None"/>
             <toolkit:ColorPicker x:Name="colorPicker" SelectedColorChanged="colorPicker_SelectedColorChanged" Width="202"/>
         </StackPanel>
 
